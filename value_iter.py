@@ -48,7 +48,7 @@ def value_iteration_demo():
     # print('return_pi={}'.format(eval_game(env, agent)))
     print(agent.pi)
 
-
+# 价值迭代
 class ValueIteration(object):
 
     def value_iteration(self, agent, max_iter=-1):
@@ -79,7 +79,7 @@ class ValueIteration(object):
             if iteration == max_iter:
                 break
 
-        print('Iter {} rounds converge'.format(iteration))
+        #print('Iter {} rounds converge'.format(iteration))
         for i in range(1, agent.s_len):
             for j in range(0, agent.a_len):
                 # 计算收敛后值函数的状态-行动值函数

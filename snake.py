@@ -94,7 +94,7 @@ class TableAgent(object):
         self.value_pi = np.zeros((self.s_len))
         # 状态行动值函数
         self.value_q = np.zeros((self.s_len, self.a_len))
-        # 衰减因子
+        # 折扣因子
         self.gamma = 0.8
 
 
@@ -119,7 +119,7 @@ class ModelFreeAgent(object):
         self.value_q = np.zeros((self.s_len, self.a_len))
         # 状态行动出现的次数
         self.value_n = np.zeros((self.s_len, self.a_len))
-        # 衰减因子
+        # 折扣因子
         self.gamma = 0.8
 
     def play(self, state, epsilon=0):
